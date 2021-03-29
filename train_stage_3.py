@@ -26,7 +26,7 @@ class Params:
 
     def __getattr__(self, item):
         return self.params.get(item, None)
-compound_coef
+
 def get_args():
     parser = argparse.ArgumentParser('PMBW - Paced MultiStage BlockWise approach for Object Detection in Thermal Images-Stage 2')
     parser.add_argument('-p', '--project', type=str, default='FLIR', help='project file that contains parameters')
