@@ -144,8 +144,8 @@ def train(opt):
                 for param in m.parameters():
                     param.requires_grad = False
 
-        model.apply(stage_3_freeze)
-        print('Backbone and BiFPN frozen')
+    model.apply(stage_3_freeze)
+    print('Backbone and BiFPN frozen')
 
     if params.num_gpus > 1 and opt.batch_size // params.num_gpus < 4:
         model.apply(replace_w_sync_bn)
