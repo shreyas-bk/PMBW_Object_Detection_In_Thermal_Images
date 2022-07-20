@@ -2,5 +2,3 @@
 
 ![](inferences/FLIR_09144.jpeg)
 
-TODO:
-- add inference scripts and results
